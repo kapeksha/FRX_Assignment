@@ -1,0 +1,204 @@
+INFO:root:Sending authentication request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjA3MDIyODgsImlhdCI6MTcyMDYxNTg4OCwic3ViIjoxfQ.VT7oYwX-Lvzu4yg0Xe7vLdXduDk4_KGxTy36Td64uBg
+ERROR:root:gRPC error during authentication: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'dict' object has no attribute '__dict__'"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2024-07-10T18:21:56.708573799+05:30", grpc_status:2, grpc_message:"Exception calling application: \'dict\' object has no attribute \'__dict__\'"}"
+>
+ERROR:task_project.app:Exception on /project/project [POST]
+Traceback (most recent call last):
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask_restx/api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask/views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask_restx/resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask_restx/marshalling.py", line 244, in wrapper
+    resp = f(*args, **kwargs)
+  File "/home/trellis/FRX_TaskM/task_manager/task_project/Task_Manager/token_required.py", line 25, in decorated
+    success, user_id = authentication(token)
+  File "/home/trellis/FRX_TaskM/task_manager/task_project/Task_Manager/proto/auth_client.py", line 22, in authentication
+    response = stub.Authenticate(request)
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/grpc/_channel.py", line 1181, in __call__
+    return _end_unary_response_blocking(state, call, False, None)
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/grpc/_channel.py", line 1006, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'dict' object has no attribute '__dict__'"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2024-07-10T18:21:56.708573799+05:30", grpc_status:2, grpc_message:"Exception calling application: \'dict\' object has no attribute \'__dict__\'"}"
+>
+INFO:werkzeug:127.0.0.1 - - [10/Jul/2024 18:21:56] "[35m[1mPOST /project/project HTTP/1.1[0m" 500 -
+INFO:root:Sending authentication request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjA3MDIyODgsImlhdCI6MTcyMDYxNTg4OCwic3ViIjoxfQ.VT7oYwX-Lvzu4yg0Xe7vLdXduDk4_KGxTy36Td64uBg
+ERROR:root:gRPC error during authentication: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'user_id'"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2024-07-10T18:23:11.515894419+05:30", grpc_status:2, grpc_message:"Exception calling application: \'user_id\'"}"
+>
+ERROR:task_project.app:Exception on /project/project [POST]
+Traceback (most recent call last):
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask_restx/api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask/views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask_restx/resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask_restx/marshalling.py", line 244, in wrapper
+    resp = f(*args, **kwargs)
+  File "/home/trellis/FRX_TaskM/task_manager/task_project/Task_Manager/token_required.py", line 25, in decorated
+    success, user_id = authentication(token)
+  File "/home/trellis/FRX_TaskM/task_manager/task_project/Task_Manager/proto/auth_client.py", line 22, in authentication
+    response = stub.Authenticate(request)
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/grpc/_channel.py", line 1181, in __call__
+    return _end_unary_response_blocking(state, call, False, None)
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/grpc/_channel.py", line 1006, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'user_id'"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2024-07-10T18:23:11.515894419+05:30", grpc_status:2, grpc_message:"Exception calling application: \'user_id\'"}"
+>
+INFO:werkzeug:127.0.0.1 - - [10/Jul/2024 18:23:11] "[35m[1mPOST /project/project HTTP/1.1[0m" 500 -
+INFO:root:Sending authentication request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjA3MDIyODgsImlhdCI6MTcyMDYxNTg4OCwic3ViIjoxfQ.VT7oYwX-Lvzu4yg0Xe7vLdXduDk4_KGxTy36Td64uBg
+ERROR:root:gRPC error during authentication: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'user_id'"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Exception calling application: \'user_id\'", grpc_status:2, created_time:"2024-07-10T18:24:26.460175562+05:30"}"
+>
+ERROR:task_project.app:Exception on /project/project [POST]
+Traceback (most recent call last):
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask_restx/api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask/views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask_restx/resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask_restx/marshalling.py", line 244, in wrapper
+    resp = f(*args, **kwargs)
+  File "/home/trellis/FRX_TaskM/task_manager/task_project/Task_Manager/token_required.py", line 25, in decorated
+    success, user_id = authentication(token)
+  File "/home/trellis/FRX_TaskM/task_manager/task_project/Task_Manager/proto/auth_client.py", line 22, in authentication
+    response = stub.Authenticate(request)
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/grpc/_channel.py", line 1181, in __call__
+    return _end_unary_response_blocking(state, call, False, None)
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/grpc/_channel.py", line 1006, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNKNOWN
+	details = "Exception calling application: 'user_id'"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Exception calling application: \'user_id\'", grpc_status:2, created_time:"2024-07-10T18:24:26.460175562+05:30"}"
+>
+INFO:werkzeug:127.0.0.1 - - [10/Jul/2024 18:24:26] "[35m[1mPOST /project/project HTTP/1.1[0m" 500 -
+INFO:root:Sending authentication request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjA3MDM0ODQsImlhdCI6MTcyMDYxNzA4NCwic3ViIjoxfQ.-kzzHwZv3iJMr7QAEHuZQQp-dPhIp8JiuhuGy5NAy6k
+ERROR:root:gRPC error during authentication: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.INTERNAL
+	details = "Failed to serialize response!"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2024-07-10T18:41:52.484132222+05:30", grpc_status:13, grpc_message:"Failed to serialize response!"}"
+>
+ERROR:task_project.app:Exception on /project/project [POST]
+Traceback (most recent call last):
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask_restx/api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask/views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask_restx/resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask_restx/marshalling.py", line 244, in wrapper
+    resp = f(*args, **kwargs)
+  File "/home/trellis/FRX_TaskM/task_manager/task_project/Task_Manager/token_required.py", line 26, in decorated
+    success, user_id = authentication(token)
+  File "/home/trellis/FRX_TaskM/task_manager/task_project/Task_Manager/proto/auth_client.py", line 22, in authentication
+    response = stub.Authenticate(request)
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/grpc/_channel.py", line 1181, in __call__
+    return _end_unary_response_blocking(state, call, False, None)
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/grpc/_channel.py", line 1006, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.INTERNAL
+	details = "Failed to serialize response!"
+	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2024-07-10T18:41:52.484132222+05:30", grpc_status:13, grpc_message:"Failed to serialize response!"}"
+>
+INFO:werkzeug:127.0.0.1 - - [10/Jul/2024 18:41:52] "[35m[1mPOST /project/project HTTP/1.1[0m" 500 -
+INFO:root:Sending authentication request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjA3MDM2ODEsImlhdCI6MTcyMDYxNzI4MSwic3ViIjoxfQ.IYGfnv1tqAOUjPTYGSv9W3J6951OFcgVg4f4B-qTM9M
+ERROR:root:gRPC error during authentication: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.INTERNAL
+	details = "Failed to serialize response!"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Failed to serialize response!", grpc_status:13, created_time:"2024-07-10T18:45:05.686151952+05:30"}"
+>
+ERROR:task_project.app:Exception on /project/project [POST]
+Traceback (most recent call last):
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask_restx/api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask/views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask_restx/resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask_restx/marshalling.py", line 244, in wrapper
+    resp = f(*args, **kwargs)
+  File "/home/trellis/FRX_TaskM/task_manager/task_project/Task_Manager/token_required.py", line 26, in decorated
+    success, user_id = authentication(token)
+  File "/home/trellis/FRX_TaskM/task_manager/task_project/Task_Manager/proto/auth_client.py", line 22, in authentication
+    response = stub.Authenticate(request)
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/grpc/_channel.py", line 1181, in __call__
+    return _end_unary_response_blocking(state, call, False, None)
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/grpc/_channel.py", line 1006, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.INTERNAL
+	details = "Failed to serialize response!"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"Failed to serialize response!", grpc_status:13, created_time:"2024-07-10T18:45:05.686151952+05:30"}"
+>
+INFO:werkzeug:127.0.0.1 - - [10/Jul/2024 18:45:05] "[35m[1mPOST /project/project HTTP/1.1[0m" 500 -
+INFO:root:Sending authentication request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjA3MDM2ODEsImlhdCI6MTcyMDYxNzI4MSwic3ViIjoxfQ.IYGfnv1tqAOUjPTYGSv9W3J6951OFcgVg4f4B-qTM9M
+ERROR:root:gRPC error during authentication: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50051: Failed to connect to remote host: Connection refused"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50051: Failed to connect to remote host: Connection refused", grpc_status:14, created_time:"2024-07-10T18:52:44.598080766+05:30"}"
+>
+ERROR:task_project.app:Exception on /project/project [POST]
+Traceback (most recent call last):
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask_restx/api.py", line 402, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask/views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask_restx/resource.py", line 41, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/flask_restx/marshalling.py", line 244, in wrapper
+    resp = f(*args, **kwargs)
+  File "/home/trellis/FRX_TaskM/task_manager/task_project/Task_Manager/token_required.py", line 26, in decorated
+    success, user_id = authentication(token)
+  File "/home/trellis/FRX_TaskM/task_manager/task_project/Task_Manager/proto/auth_client.py", line 22, in authentication
+    response = stub.Authenticate(request)
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/grpc/_channel.py", line 1181, in __call__
+    return _end_unary_response_blocking(state, call, False, None)
+  File "/home/trellis/FRX_TaskM/taskmanager/lib/python3.10/site-packages/grpc/_channel.py", line 1006, in _end_unary_response_blocking
+    raise _InactiveRpcError(state)  # pytype: disable=not-instantiable
+grpc._channel._InactiveRpcError: <_InactiveRpcError of RPC that terminated with:
+	status = StatusCode.UNAVAILABLE
+	details = "failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50051: Failed to connect to remote host: Connection refused"
+	debug_error_string = "UNKNOWN:Error received from peer  {grpc_message:"failed to connect to all addresses; last error: UNKNOWN: ipv4:127.0.0.1:50051: Failed to connect to remote host: Connection refused", grpc_status:14, created_time:"2024-07-10T18:52:44.598080766+05:30"}"
+>
+INFO:werkzeug:127.0.0.1 - - [10/Jul/2024 18:52:44] "[35m[1mPOST /project/project HTTP/1.1[0m" 500 -
