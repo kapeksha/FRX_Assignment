@@ -1,7 +1,9 @@
 flask
 flask_restx
-SQLAlchemy
-Marshmallow
+flask_sqlalchemy
+flask_marshmallow
+marshmallow_sqlalchemy
+flask_migrate
 alembic
 grpcio
 grpcio-tools
