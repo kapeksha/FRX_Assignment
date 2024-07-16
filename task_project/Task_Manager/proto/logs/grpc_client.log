@@ -1,0 +1,18 @@
+INFO:root:Sending authentication request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjEyMDU0ODcsImlhdCI6MTcyMTExOTA4Nywic3ViIjo0fQ.-L80pWrdrvycoALZ6lBP2UTzY-5slLmu2wZ4DDKcrRg
+INFO:root:Authentication response received: user_id: 4, valid: True
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2024 14:08:41] "[35m[1mPOST /project/project HTTP/1.1[0m" 201 -
+INFO:root:Sending authentication request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjEyMDU0ODcsImlhdCI6MTcyMTExOTA4Nywic3ViIjo0fQ.-L80pWrdrvycoALZ6lBP2UTzY-5slLmu2wZ4DDKcrRg
+INFO:root:Authentication response received: user_id: 4, valid: True
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2024 14:15:09] "[35m[1mPOST /task_assignment/task_assignment HTTP/1.1[0m" 500 -
+INFO:root:Sending authentication request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjEyMDU0ODcsImlhdCI6MTcyMTExOTA4Nywic3ViIjo0fQ.-L80pWrdrvycoALZ6lBP2UTzY-5slLmu2wZ4DDKcrRg
+INFO:root:Authentication response received: user_id: 4, valid: True
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2024 14:16:12] "[35m[1mPOST /task_assignment/task_assignment HTTP/1.1[0m" 500 -
+INFO:root:Sending authentication request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjEyMDU0ODcsImlhdCI6MTcyMTExOTA4Nywic3ViIjo0fQ.-L80pWrdrvycoALZ6lBP2UTzY-5slLmu2wZ4DDKcrRg
+INFO:root:Authentication response received: user_id: 4, valid: True
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2024 14:17:35] "[31m[1mPOST /comment/comment HTTP/1.1[0m" 400 -
+INFO:root:Sending authentication request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjEyMDYwODcsImlhdCI6MTcyMTExOTY4Nywic3ViIjo0fQ.VGMBIGv5tLJ6DdTuYte1gowyb6F9ftvxyfcVM4wsIqo
+INFO:root:Authentication response received: user_id: 4, valid: True
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2024 14:18:33] "[31m[1mPOST /comment/comment HTTP/1.1[0m" 400 -
+INFO:root:Sending authentication request with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjEyMDYwODcsImlhdCI6MTcyMTExOTY4Nywic3ViIjo0fQ.VGMBIGv5tLJ6DdTuYte1gowyb6F9ftvxyfcVM4wsIqo
+INFO:root:Authentication response received: user_id: 4, valid: True
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2024 14:19:05] "[35m[1mPOST /comment/comment HTTP/1.1[0m" 201 -
